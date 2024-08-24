@@ -1,1 +1,1 @@
-For TJ computer teams
+For TJ Computer Team
