@@ -1,0 +1,32 @@
+\begin{problem}{Feeding Elmo}{standard input}{standard output}{2 seconds}{512 megabytes}
+
+Elmo is picky eater, and has decided that he will only eat batches of $m$ cookies where the number of chocolate chips on each cookie forms an arithmetic sequence$^\dagger$ with common difference $d$. 
+
+Cookie Monster has $n$ cookies, and the $i$-th cookie has $c_i$ chocolate chips. Cookie Monster loves exotic cookies, so some of the cookies in his collection may have a negative number of chocolate chips. 
+
+Find the number of sequences that Cookie Monster can create to successfully feed Elmo by choosing $m$ cookies. Of course, each cookie can only be used once. Two sequences are different if there is any position where the number of chocolate chips differs between the two cookies at that position in those sequences. 
+
+$^\dagger$ An arithmetic sequence is a sequence of integers $b_1, b_2, \dots, b_k$ which satisfy $b_2 - b_1 = b_3 - b_2 = \ldots = b_k - b_{k-1} = d$, where $d$ is the common difference.
+
+\InputFile
+The first line contains three integers $n$, $d$, and $m$ ($1 \le m \le n \le 10^5, 1 \le d \le 10^9$).
+
+The second line contains $n$ space separated integers $c_1, c_2, \ldots, c_n$ ($-10^9 \le c_i \le 10^9$) "--- the number of chocolate chips on each cookie.
+
+\OutputFile
+Output a single integer "--- the number of different arithmetic sequences of chocolate chips that Cookie Monster can form to feed Elmo.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\Note
+In the first example, the six sequences that can be formed are $\{0,3\}$, $\{3,6\}$, $\{6,9\}$, $\{9,12\}$, $\{2,5\}$, and $\{5,8\}$.
+
+In the second example, the five sequences that can be formed are $\{2\}$, $\{-1\}$, $\{0\}$, $\{3\}$, and $\{5\}$.
+
+\end{problem}
+

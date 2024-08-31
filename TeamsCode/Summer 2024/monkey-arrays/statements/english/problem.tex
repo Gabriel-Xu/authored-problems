@@ -1,0 +1,49 @@
+\begin{problem}{Monkey Arrays}{standard input}{standard output}{1 second}{256 megabytes}
+
+Yash really likes monkeys and special arrays. Because he was curious, Curios George gave Yash an array $A$ of length $N$, and now Yash wonders how many \textit{good} subarrays exist in this array.
+
+Specifically, Yash deems a subarray \textit{good} if $X$, his favorite number, is the maximum value in the subarray, $Y$, his second favorite number, is the minimum in the subarray, and $K$, his least favorite number, is not in the subarray. In other words, in a given subarray, $X$ should be the maximum value, $Y$ should be the minimum, and $K$ should not be in the subarray.
+
+\InputFile
+Each test contains multiple test cases. The first line of input contains a single integer $t$ $(1 \leq t \leq 5 \cdot 10^4)$ "--- the number of test cases.
+
+The first line of each test case contains four integers $N$, $X$, $Y$, and $K$ ($1 \le N \le 5 \cdot 10^5, 1 \le Y < K < X \le 10^9$).
+
+The second line of each test case contains $N$ integers $A_1,A_2,\ldots,A_N$ ($1 \le A_i \le 10^9$) "--- the elements of the array $A$.
+
+It is guaranteed that the sum of $N$ over all test cases does not exceed $5 \cdot 10^5$.
+
+---
+
+Tests in subtasks are numbered from $1-20$ with samples skipped. Each test is worth $\frac{100}{20}=5$ points.
+
+Tests $1-5$ satisfy that the sum of $N$ over all test cases does not exceed $100$.
+
+Tests $6-10$ satisfy that the sum of $N$ over all test cases does not exceed $1000$.
+
+The remaining tests do not satisfy any additional constraints.
+
+\OutputFile
+For each test case, output a single integer "--- the number of \textit{good} subarrays in the array $A$.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+In the first test case of the sample test, the $5$ subarrays that are \textit{good} are $[6, 7, 4]$, $[6, 7, 4, 6]$, $[7, 4]$, $[7, 4, 6]$, and $[4, 6, 7]$.
+
+In the second test case of the sample test, there are no \textit{good} subarrays.
+
+---
+
+Problem Idea: yash_9a3b
+
+Problem Preparation: yash_9a3b, xug
+
+Occurrences: Novice G, Advanced B
+
+\end{problem}
+

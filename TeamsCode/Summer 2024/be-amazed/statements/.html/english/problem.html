@@ -1,0 +1,35 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>XOR Game</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">XOR Game</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>XORnet has created the most difficult game yet, and Little Jonny wants to be the first to beat it. He is given a matrix $$$a$$$, consisting of $$$n$$$ rows by $$$m$$$ columns. Each element of the matrix is equal to $$$0$$$ or $$$1$$$, and he needs to reach the bottom right corner starting from the top left corner by only stepping down or right. However, he may only step on $$$1$$$s. Little Jonny is also a very accomplished hacker, so he managed to give himself an XORgun, which, when used, can toggle all the values in a row, changing the $$$1$$$s to $$$0$$$s and $$$0$$$s to $$$1$$$s (unfortunately, his skills did not extend to enable toggling for columns). All uses of the XORgun must be done before he takes his first step. Find the minimum number of uses of the XORgun that allow Little Jonny to beat the game.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>Each test contains multiple test cases. The first line of input contains a single integer $$$t$$$ ($$$1 \le t \le 10^4$$$)&nbsp;&mdash; the number of test cases.</P><P>The first line of each test case contains two positive integers $$$n$$$ and $$$m$$$ ($$$1 \le n \cdot m \le 10^6$$$)&nbsp;&mdash; the number of rows and the number of columns of the matrix $$$a$$$.</P><P>Each of the next $$$n$$$ lines contains a binary string of length $$$m$$$&nbsp;&mdash; the description of matrix $$$a$$$. It is guaranteed that the value of the top left corner is $$$1$$$.</P><P>It is guaranteed that the sum of $$$n \cdot m$$$ over all test cases does not exceed $$$10^6$$$.</P><P>&mdash;</P><P>There are $$$20$$$ tests, not including samples. Each test is worth $$$\frac{100}{20}=5$$$ points.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each test case, output a single integer&nbsp;&mdash; the minimum number of times Little Jonny can use the XORgun for him to beat the game. If it is impossible for him to beat the game, output $$$-1$$$.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="3
+3 4
+1110
+0100
+1010
+4 3
+110
+101
+110
+000
+2 5
+10010
+11011
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">3 4</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">1110</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">0100</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">1010</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">4 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">110</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">101</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">110</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">000</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">2 5</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">10010</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">11011</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2
+1
+-1
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>In the first test case of the sample test, it is optimal to use the XORgun on rows $$$2$$$ and $$$3$$$.</P><P>In the second test case of the sample test, it is optimal to use the XORgun on row $$$4$$$.</P><P>&mdash;</P><P>Problem Idea: Red0</P><P>Problem Preparation: xug</P><P>Occurrences: Novice F</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

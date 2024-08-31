@@ -1,0 +1,26 @@
+\begin{problem}{Cookie Eating II}{standard input}{standard output}{2 seconds}{512 megabytes}
+
+Cookie Monster and Elmo are playing yet another cookie-eating game. On his turn, Cookie Monster can eat $n$ cookies while Elmo can eat $m$ cookies. If there are less cookies remaining than the number of cookies the player is allowed to eat, they eat all of the cookies that are left. 
+
+The player who eats the last cookie is given the prestigious title of Cookie Connoisseur. If there are initially $c$ cookies and Cookie Monster starts eating cookies first, who is the Cookie Connoisseur?
+
+\InputFile
+The first line contains $3$ integers $n$, $m$, and $c$ ($1 \le n, m, c \le 10^9$).
+
+\OutputFile
+Output a single string "--- \texttt{Cookie Monster} if Cookie Monster will win and \texttt{Elmo} if Elmo will win and be named Cookie Connoisseur.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\exmpfile{example.04}{example.04.a}%
+\end{example}
+
+\Note
+In the first test case, Cookie Monster will eat $2$ cookies, Elmo will eat $4$ cookies, and Cookie Monster will eat $2$ cookies again. Since there are less than $4$ cookies left, Elmo will eat all of them and become the Cookie Connoisseur.
+
+\end{problem}
+

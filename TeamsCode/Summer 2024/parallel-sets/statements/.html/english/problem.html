@@ -1,0 +1,25 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Parallel Arrays</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Parallel Arrays</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>Given the array $$$[ 1,2, \ldots ,2 \cdot n ]$$$, partition it into $$$2$$$ subsequences $$$a$$$ and $$$b$$$ of length $$$n$$$ such that each element of the original array is present in one of $$$a$$$ or $$$b$$$. A subsequence is a sequence that can be derived from the given array by deleting zero or more elements without changing the order of the remaining elements.</P><P>For each index $$$i$$$ ($$$ 1 \le i \le n$$$), you are given one of the three following constraints: $$$a_i+b_i = v_i$$$, $$$|a_i-b_i| = v_i$$$, or $$$\text{max}(a_i, b_i) = v_i$$$. Find the number of possible subsequences $$$a$$$ and $$$b$$$, modulo $$$10^9+7$$$. It is guaranteed there exists at least one partition that satisfies the constraints.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line of input contains a single integer $$$n$$$ ($$$1 \le n \le 10^5$$$).</P><P>The next $$$n$$$ lines each contain two integers $$$t_i$$$ and $$$v_i$$$ ($$$1 \le t_i \le 3, 1 \le v_i &lt; 4 \cdot n$$$)&nbsp;&mdash; the constraints on $$$a_i$$$ and $$$b_i$$$.</P><P>If $$$t_i=1$$$, $$$v_i=a_i+b_i$$$.</P><P>If $$$t_i=2$$$, $$$v_i=|a_i-b_i|$$$.</P><P>If $$$t_i=3$$$, $$$v_i=\text{max}(a_i, b_i)$$$.</P><P>&mdash;</P><P>There are $$$10$$$ tests, not including samples. Each test is worth $$$\frac{100}{10}=10$$$ points.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>Output a single integer&nbsp;&mdash; the number of possible ways to partition the array $$$[ 1,2, \ldots 2 \cdot n ]$$$ into $$$a$$$ and $$$b$$$ that satisfy the constraints. Output your answer modulo $$$10^9+7$$$.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="5
+1 5
+3 5
+3 6
+2 2
+1 18
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3 6</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 2</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 18</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+4</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>In the sample test, the $$$4$$$ ways to partition the array are: </P><UL> <LI> $$$a=[1,2,3,7,8]$$$ and $$$b=[4,5,6,9,10]$$$ </LI><LI> $$$a=[1,2,3,9,10]$$$ and $$$b=[4,5,6,7,8]$$$ </LI><LI> $$$a=[4,5,6,7,8]$$$ and $$$b=[1,2,3,9,10]$$$ </LI><LI> $$$a=[4,5,6,9,10]$$$ and $$$b=[1,2,3,7,8]$$$ </LI></UL><P></P><P>&mdash;</P><P>Problem Idea: superhelen</P><P>Problem Preparation: xug</P><P>Occurrences: Novice D</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

@@ -1,0 +1,17 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Tower Upgrades</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Tower Upgrades</DIV></DIV><DIV class="tutorial"><P>To ensure we decrease the monsters health by $$$1$$$, we can either upgrade the tower it is currently at or perform the optimal combination of upgrades for all the node's children, since we don't know which child it will go to. If the current node is a leaf, then the optimal combination is just upgrading the current node. To compute the answer, we can run a depth first search where we calculate the minimum cost to decrease the monster's health by $$$1$$$ by calculating the minimum cost for each node of the tree by comparing it with the sum of the minimum costs for each its children, rooting the tree at node $$$1$$$.</P></DIV></DIV>   
+
+</BODY></HTML>

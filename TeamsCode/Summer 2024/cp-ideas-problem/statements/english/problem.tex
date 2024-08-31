@@ -1,0 +1,37 @@
+\begin{problem}{Digit Removal}{standard input}{standard output}{1 second}{256 megabytes}
+
+Given an integer $a$, count the number of different ways to remove exactly $4$ digits of $a$ such that the resulting integer is less than $b$.
+
+\InputFile
+Each test contains multiple test cases. The first line of input contains a single integer $t$ ($1 \le t \le 100$) "--- the number of test cases.
+
+Each test case contains two integers $a$ and $b$ ($10^4 \le a < 10^{10000}, 1 \le b < 10^{10000}$). It is guaranteed that the number of digits in $a$ is exactly $4$ more than the number of digits in $b$.
+
+---
+
+There are $10$ tests, not including samples. Each test is worth $\frac{100}{10}=10$ points.
+
+\OutputFile
+Output a single integer "--- the number of ways to make $a$ less than $b$ after removing $4$ digits.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+In the first test case of the sample test, the only digits you can remove are $6$, $3$, $4$, and $7$ to make $22196$.
+
+In the second test case of the sample test, you can remove the $5$ and then remove any three digits after the first $0$ for a total of $56$ different ways.
+
+---
+
+Problem Idea: \href{https://fjzzq2002.github.io/cpideas/}{CPIdeas}
+
+Problem Preparation: xug
+
+Occurrences: Novice H
+
+\end{problem}
+

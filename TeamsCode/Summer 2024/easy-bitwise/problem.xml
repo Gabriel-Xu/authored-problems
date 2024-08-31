@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="13" short-name="easy-bitwise" url="https://polygon.codeforces.com/p0RuzlP/GabrielXu/easy-bitwise">
+    <names>
+        <name language="english" value="Minimize Sum"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>21</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" points="0.0" sample="true"/>
+                <test cmd="gen_random 1000 10 1" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 10 2" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 10 3" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 10 4" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 10 5" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 6" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 7" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 8" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 9" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 10" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 11" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 12" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 13" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 14" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 15" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 16" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 17" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 18" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 19" method="generated" points="5.0"/>
+                <test cmd="gen_random 190000 100 20" method="generated" points="5.0"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_random.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/val.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::wcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/val.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/greedy.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/main_sol.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="wrong-answer">
+                <source path="solutions/overflow.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/tle.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

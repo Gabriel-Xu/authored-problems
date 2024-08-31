@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="13" short-name="tower-upgrades" url="https://polygon.codeforces.com/p2UJ466/GabrielXu/tower-upgrades">
+    <names>
+        <name language="english" value="Tower Upgrades"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <tutorials>
+        <tutorial charset="UTF-8" language="english" mathjax="true" path="statements/english/tutorial.tex" type="application/x-tex"/>
+        <tutorial charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/tutorial.html" type="text/html"/>
+        <tutorial language="english" path="statements/.pdf/english/tutorial.pdf" type="application/pdf"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>33</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test cmd="gen1 100000" method="generated"/>
+                <test cmd="gen2 -10 1000000 1000 -0.1 15" method="generated"/>
+                <test cmd="gen2 -10 1000000 1000000 -0.1 25" method="generated"/>
+                <test cmd="gen2 0 1000000 1000000 -0.1 5" method="generated"/>
+                <test cmd="gen2 0 1000000 1000000 -0.1 20" method="generated"/>
+                <test cmd="gen2 10 1000000 1000000 -0.1 0" method="generated"/>
+                <test cmd="gen2 10 1000000 1000 -0.1 25" method="generated"/>
+                <test cmd="gen2 10 1000000 1000000 -0.1 25" method="generated"/>
+                <test method="manual"/>
+                <test cmd="gen2 -9 1000000 1000000 0 0" method="generated"/>
+                <test cmd="gen2 -7 1000000 1000 0 0" method="generated"/>
+                <test cmd="gen2 -6 1000000 1000000 0 0" method="generated"/>
+                <test cmd="gen2 -2 1000000 1000 0 0" method="generated"/>
+                <test cmd="gen2 -1 1000000 1000000 0 0" method="generated"/>
+                <test cmd="gen2 2 1000000 1000 0 0" method="generated"/>
+                <test cmd="gen2 3 1000000 1000 0 0" method="generated"/>
+                <test cmd="gen2 4 1000000 1000 0 0" method="generated"/>
+                <test cmd="gen2 6 1000000 1000000 -0.1 15" method="generated"/>
+                <test cmd="gen2 9 1000000 1000000 -0.2 15" method="generated"/>
+                <test cmd="gen2 -4 1000000 1000 -0.3 15" method="generated"/>
+                <test cmd="gen2 -4 1000000 1000000 -0.2 20" method="generated"/>
+                <test cmd="gen2 -3 1000000 1000 -0.3 20" method="generated"/>
+                <test cmd="gen2 -3 1000000 1000000 -0.4 20" method="generated"/>
+                <test cmd="gen2 3 1000000 1000 -0.5 20" method="generated"/>
+                <test cmd="gen2 3 1000000 1000000 -0.3 25" method="generated"/>
+                <test cmd="gen2 4 1000000 1000 -0.4 25" method="generated"/>
+                <test cmd="gen2 4 1000000 1000000 -0.5 25" method="generated"/>
+                <test cmd="gen2 5 1000000 1000 -0.6 25" method="generated"/>
+                <test cmd="gen2 5 1000000 1000000 -0.7 25" method="generated"/>
+                <test cmd="gen2 6 1000000 1000 -0.4 30" method="generated"/>
+                <test cmd="gen2 6 1000000 1000000 -0.5 30" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen1.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen2.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/val.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::wcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/val.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/avnith.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/main_sol.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

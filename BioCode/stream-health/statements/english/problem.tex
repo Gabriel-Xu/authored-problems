@@ -1,0 +1,39 @@
+\begin{problem}{Stream Health}{standard input}{standard output}{1 second}{256 megabytes}
+
+\begin{center}
+  \includegraphics[height=10cm]{45827.png} \\
+\end{center}
+
+Dr. Xu is measuring the amount of nitrates ($\text{NO}_3$) and phosphates ($\text{PO}_4$) in a nearby stream. Dr. Xu wants to make sure the stream is healthy for drinking, agriculture, recreation, industry, reducing flood damage, and providing habitat for aquatic animals. There are a variety of methods to measure how clean a stream is, such as evaluating the condition of aquatic wildlife and different chemical tests.
+
+
+Dr. Xu performs $t$ tests on the stream for the $\text{NO}_3$ level as $a_i$ and $\text{PO}_4$ level as $b_i$. Help him determine the approximate average $\text{NO}_3$ level and $\text{PO}_4$ level of his tests.
+
+\InputFile
+The first line contains an integer $t$ $(1\le t\le 1000)$ "--- the number of tests.
+
+
+The second line contains $t$ space separated integers $a_1,a_2,...,a_t$ $(0\le a_i\le 10^6)$ "--- the amount of nitrates for each test of the stream.
+
+The third line contains $t$ space separated integers $b_1,b_2,...,b_t$ $(0\le b_i\le 10^6)$ "--- the amount of phosphates for each test of the stream.
+
+\OutputFile
+Output two space separated integers "--- the average $\text{NO}_3$ level and $\text{PO}_4$ level.
+
+
+To make the answer contain integer values, truncate the decimals. For example, if the true average were $17.8$, then the answer would be $17$.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+The average of $1$, $2$, and $3$ is $\frac{1+2+3}{3}=2$.
+
+
+The average of $5$, $1$, and $7$ is $\frac{5+1+7}{3}=4.333...$, which truncates to $4$.
+
+\end{problem}
+

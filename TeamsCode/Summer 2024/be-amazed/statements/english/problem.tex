@@ -1,0 +1,42 @@
+\begin{problem}{XOR Game}{standard input}{standard output}{1 second}{256 megabytes}
+
+XORnet has created the most difficult game yet, and Little Jonny wants to be the first to beat it. He is given a matrix $a$, consisting of $n$ rows by $m$ columns. Each element of the matrix is equal to $0$ or $1$, and he needs to reach the bottom right corner starting from the top left corner by only stepping down or right. However, he may only step on $1$s. Little Jonny is also a very accomplished hacker, so he managed to give himself an XORgun, which, when used, can toggle all the values in a row, changing the $1$s to $0$s and $0$s to $1$s (unfortunately, his skills did not extend to enable toggling for columns). All uses of the XORgun must be done before he takes his first step. Find the minimum number of uses of the XORgun that allow Little Jonny to beat the game.
+
+\InputFile
+Each test contains multiple test cases. The first line of input contains a single integer $t$ ($1 \le t \le 10^4$) "--- the number of test cases.
+
+The first line of each test case contains two positive integers $n$ and $m$ ($1 \le n \cdot m \le 10^6$) "--- the number of rows and the number of columns of the matrix $a$.
+
+Each of the next $n$ lines contains a binary string of length $m$ "--- the description of matrix $a$. It is guaranteed that the value of the top left corner is $1$.
+
+It is guaranteed that the sum of $n \cdot m$ over all test cases does not exceed $10^6$.
+
+---
+
+There are $20$ tests, not including samples. Each test is worth $\frac{100}{20}=5$ points.
+
+\OutputFile
+For each test case, output a single integer "--- the minimum number of times Little Jonny can use the XORgun for him to beat the game. If it is impossible for him to beat the game, output $-1$.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+In the first test case of the sample test, it is optimal to use the XORgun on rows $2$ and $3$.
+
+In the second test case of the sample test, it is optimal to use the XORgun on row $4$.
+
+
+---
+
+Problem Idea: Red0
+
+Problem Preparation: xug
+
+Occurrences: Novice F
+
+\end{problem}
+

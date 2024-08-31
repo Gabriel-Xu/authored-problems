@@ -1,0 +1,29 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Monkey Arrays</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Monkey Arrays</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>Yash really likes monkeys and special arrays. Because he was curious, Curios George gave Yash an array $$$A$$$ of length $$$N$$$, and now Yash wonders how many <SPAN class="tex-font-style-it">good</SPAN> subarrays exist in this array.</P><P>Specifically, Yash deems a subarray <SPAN class="tex-font-style-it">good</SPAN> if $$$X$$$, his favorite number, is the maximum value in the subarray, $$$Y$$$, his second favorite number, is the minimum in the subarray, and $$$K$$$, his least favorite number, is not in the subarray. In other words, in a given subarray, $$$X$$$ should be the maximum value, $$$Y$$$ should be the minimum, and $$$K$$$ should not be in the subarray.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>Each test contains multiple test cases. The first line of input contains a single integer $$$t$$$ $$$(1 \leq t \leq 5 \cdot 10^4)$$$&nbsp;&mdash; the number of test cases.</P><P>The first line of each test case contains four integers $$$N$$$, $$$X$$$, $$$Y$$$, and $$$K$$$ ($$$1 \le N \le 5 \cdot 10^5, 1 \le Y &lt; K &lt; X \le 10^9$$$).</P><P>The second line of each test case contains $$$N$$$ integers $$$A_1,A_2,\ldots,A_N$$$ ($$$1 \le A_i \le 10^9$$$)&nbsp;&mdash; the elements of the array $$$A$$$.</P><P>It is guaranteed that the sum of $$$N$$$ over all test cases does not exceed $$$5 \cdot 10^5$$$.</P><P>&mdash;</P><P>Tests in subtasks are numbered from $$$1-20$$$ with samples skipped. Each test is worth $$$\frac{100}{20}=5$$$ points.</P><P>Tests $$$1-5$$$ satisfy that the sum of $$$N$$$ over all test cases does not exceed $$$100$$$.</P><P>Tests $$$6-10$$$ satisfy that the sum of $$$N$$$ over all test cases does not exceed $$$1000$$$.</P><P>The remaining tests do not satisfy any additional constraints.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each test case, output a single integer&nbsp;&mdash; the number of <SPAN class="tex-font-style-it">good</SPAN> subarrays in the array $$$A$$$.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="3
+8 7 4 5
+6 7 4 6 5 4 6 7
+6 5 2 4
+3 2 4 5 1 3
+12 8 3 6
+10 4 3 7 4 8 6 5 1 3 8 2
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">8 7 4 5</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">6 7 4 6 5 4 6 7</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">6 5 2 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">3 2 4 5 1 3</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">12 8 3 6</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">10 4 3 7 4 8 6 5 1 3 8 2</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+5
+0
+3
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>In the first test case of the sample test, the $$$5$$$ subarrays that are <SPAN class="tex-font-style-it">good</SPAN> are $$$[6, 7, 4]$$$, $$$[6, 7, 4, 6]$$$, $$$[7, 4]$$$, $$$[7, 4, 6]$$$, and $$$[4, 6, 7]$$$.</P><P>In the second test case of the sample test, there are no <SPAN class="tex-font-style-it">good</SPAN> subarrays.</P><P>&mdash;</P><P>Problem Idea: yash_9a3b</P><P>Problem Preparation: yash_9a3b, xug</P><P>Occurrences: Novice G, Advanced B</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

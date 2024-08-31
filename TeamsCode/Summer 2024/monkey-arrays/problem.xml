@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="28" short-name="monkey-arrays" url="https://polygon.codeforces.com/p56bIcn/yashb/monkey-arrays">
+    <names>
+        <name language="english" value="Monkey Arrays"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>21</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" points="0.0" sample="true"/>
+                <test cmd="gen_random 10 2 100" method="generated" points="5.0"/>
+                <test cmd="gen_random 10 5 100" method="generated" points="5.0"/>
+                <test cmd="gen_random 50 3 100" method="generated" points="5.0"/>
+                <test cmd="gen_random 100 5 100" method="generated" points="5.0"/>
+                <test cmd="gen_random 100 10 100" method="generated" points="5.0"/>
+                <test cmd="gen_random 10 5 1000" method="generated" points="5.0"/>
+                <test cmd="gen_random 100 10 1000" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 3 1000" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 5 1000" method="generated" points="5.0"/>
+                <test cmd="gen_random 1000 10 1000" method="generated" points="5.0"/>
+                <test cmd="gen_random 10000 15 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 10000 20 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 50000 15 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 50000 20 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 50000 25 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 100000 10 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 100000 15 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 200000 30 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 200000 40 500000" method="generated" points="5.0"/>
+                <test cmd="gen_random 200000 50 500000" method="generated" points="5.0"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/Validator2_Monkey_arrays.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </executable>
+            <executable>
+                <source path="files/gen_random.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/Validator2_Monkey_arrays.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/BruteForce_monkey_arrays.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/Model_Sol_monkey_arrays.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

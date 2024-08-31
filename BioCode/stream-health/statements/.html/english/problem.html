@@ -1,0 +1,23 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Stream Health</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Stream Health</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P></P><CENTER> <IMG class="tex-graphics" height="378px" src="8edaddda4959ef81b31c403d08ac23f5223ad76d.png">   </CENTER><P></P><P>Dr. Xu is measuring the amount of nitrates ($$$\text{NO}_3$$$) and phosphates ($$$\text{PO}_4$$$) in a nearby stream. Dr. Xu wants to make sure the stream is healthy for drinking, agriculture, recreation, industry, reducing flood damage, and providing habitat for aquatic animals. There are a variety of methods to measure how clean a stream is, such as evaluating the condition of aquatic wildlife and different chemical tests.</P><P>Dr. Xu performs $$$t$$$ tests on the stream for the $$$\text{NO}_3$$$ level as $$$a_i$$$ and $$$\text{PO}_4$$$ level as $$$b_i$$$. Help him determine the approximate average $$$\text{NO}_3$$$ level and $$$\text{PO}_4$$$ level of his tests.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains an integer $$$t$$$ $$$(1\le t\le 1000)$$$&nbsp;&mdash; the number of tests.</P><P>The second line contains $$$t$$$ space separated integers $$$a_1,a_2,...,a_t$$$ $$$(0\le a_i\le 10^6)$$$&nbsp;&mdash; the amount of nitrates for each test of the stream.</P><P>The third line contains $$$t$$$ space separated integers $$$b_1,b_2,...,b_t$$$ $$$(0\le b_i\le 10^6)$$$&nbsp;&mdash; the amount of phosphates for each test of the stream.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>Output two space separated integers&nbsp;&mdash; the average $$$\text{NO}_3$$$ level and $$$\text{PO}_4$$$ level.</P><P>To make the answer contain integer values, truncate the decimals. For example, if the true average were $$$17.8$$$, then the answer would be $$$17$$$.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+3
+1 2 3
+5 1 7
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2 4
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>The average of $$$1$$$, $$$2$$$, and $$$3$$$ is $$$\frac{1+2+3}{3}=2$$$.</P><P>The average of $$$5$$$, $$$1$$$, and $$$7$$$ is $$$\frac{5+1+7}{3}=4.333...$$$, which truncates to $$$4$$$.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

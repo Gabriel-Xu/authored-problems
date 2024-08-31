@@ -1,0 +1,49 @@
+\begin{problem}{Parallel Arrays}{standard input}{standard output}{1 second}{256 megabytes}
+
+Given the array $[ 1,2, \ldots ,2 \cdot n ]$, partition it into $2$ subsequences $a$ and $b$ of length $n$ such that each element of the original array is present in one of $a$ or $b$. A subsequence is a sequence that can be derived from the given array by deleting zero or more elements without changing the order of the remaining elements.
+
+For each index $i$ ($ 1 \le i \le n$), you are given one of the three following constraints: $a_i+b_i = v_i$, $|a_i-b_i| = v_i$, or $\text{max}(a_i, b_i) = v_i$. Find the number of possible subsequences $a$ and $b$, modulo $10^9+7$. It is guaranteed there exists at least one partition that satisfies the constraints.
+
+\InputFile
+The first line of input contains a single integer $n$ ($1 \le n \le 10^5$).
+
+The next $n$ lines each contain two integers $t_i$ and $v_i$ ($1 \le t_i \le 3, 1 \le v_i < 4 \cdot n$) "--- the constraints on $a_i$ and $b_i$.
+
+If $t_i=1$, $v_i=a_i+b_i$.
+
+If $t_i=2$, $v_i=|a_i-b_i|$.
+
+If $t_i=3$, $v_i=\text{max}(a_i, b_i)$.
+
+---
+
+There are $10$ tests, not including samples. Each test is worth $\frac{100}{10}=10$ points.
+
+\OutputFile
+Output a single integer "--- the number of possible ways to partition the array $[ 1,2, \ldots 2 \cdot n ]$ into $a$ and $b$ that satisfy the constraints. Output your answer modulo $10^9+7$.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+In the sample test, the $4$ ways to partition the array are:
+\begin{itemize}
+\item $a=[1,2,3,7,8]$ and $b=[4,5,6,9,10]$
+\item $a=[1,2,3,9,10]$ and $b=[4,5,6,7,8]$
+\item $a=[4,5,6,7,8]$ and $b=[1,2,3,9,10]$
+\item $a=[4,5,6,9,10]$ and $b=[1,2,3,7,8]$
+\end{itemize}
+
+---
+
+Problem Idea: superhelen
+
+Problem Preparation: xug
+
+Occurrences: Novice D
+
+\end{problem}
+
